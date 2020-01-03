@@ -1,0 +1,30 @@
+{
+  "name": "blockchainj",
+  "version": "1.0.0",
+  "description": "Client library for accessing Velocity Ledger BlockchainJ API",
+  "main": "src/lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morozj01/BlockchainJ.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Issuance",
+    "Trading",
+    "Digital Assets",
+    "Velocity Ledger"
+  ],
+  "author": "Justin Moroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morozj01/BlockchainJ/issues"
+  },
+  "homepage": "https://github.com/morozj01/BlockchainJ#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
