@@ -22,7 +22,10 @@ const balancesByToken = require("./blockchain/balances-by-token");
 const balancesByWallet = require("./blockchain/balances-by-wallet");
 const transactionInfo = require("./blockchain/transaction-info");
 const sendAndConfirm = require("./blockchain/send-and-confirm");
-
+const mint = require("./blockchain/mint-tokens");
+const mintAndConfirm = require("./blockchain/mint-and-confirm");
+const burn = require("./blockchain/burn-tokens");
+const burnAndConfirm = require("./blockchain/burn-and-confirm");
 const blockchainJ = {}; 
 
 blockchainJ.create = instantiate.bind(blockchainJ);
@@ -48,6 +51,10 @@ blockchainJ.transactionsByWallet = transactionsByWallet.bind(blockchainJ);
 blockchainJ.balancesByToken = balancesByToken.bind(blockchainJ);
 blockchainJ.balancesByWallet = balancesByWallet.bind(blockchainJ);
 blockchainJ.transactionInfo = transactionInfo.bind(blockchainJ);  
-blockchainJ.sendAndConfirm = sendAndConfirm.bind(blockchainJ); 
+blockchainJ.sendAndConfirm = sendAndConfirm.bind(blockchainJ);
+blockchainJ.mint = mint.bind(blockchainJ);
+blockchainJ.mintAndConfirm = mintAndConfirm.bind(blockchainJ);
+blockchainJ.burn = burn.bind(blockchainJ);
+blockchainJ.burnAndConfirm = burnAndConfirm.bind(blockchainJ); 
 
 module.exports = blockchainJ.create;
